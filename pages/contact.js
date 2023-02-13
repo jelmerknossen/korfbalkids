@@ -11,15 +11,11 @@ const Contact = () => {
     <>
       <NavbarTwo />
 
-      <PageBanner pageTitle="Contact Us" BGImage="/images/page-banner1.jpg" />
+      <PageBanner pageTitle="Contact" BGImage="/images/korfbal-header.jpg" />
 
       <ContactInfo />
 
       <ContactForm />
-
-      <div className="ptb-100">
-        <Newsletter />
-      </div>
 
       <Footer />
     </>

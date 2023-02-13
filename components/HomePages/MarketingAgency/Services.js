@@ -13,7 +13,7 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="service-card-one height-100 white-bg text-center">
+              <div className="service-card-one white-bg text-center">
                 <i className="pe-7s-smile bg-13c4a1"></i>
                 <h3>
                   <Link href="/service-details">
@@ -33,7 +33,7 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="service-card-one height-100 white-bg text-center">
+              <div className="service-card-one white-bg text-center">
                 <i className="pe-7s-users bg-fc3549"></i>
                 <h3>
                   <Link href="/service-details">
@@ -54,7 +54,7 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="300"
             >
-              <div className="service-card-one height-100 white-bg text-center">
+              <div className="service-card-one white-bg text-center">
                 <i className="pe-7s-star bg-6610f2"></i>
                 <h3>
                   <Link href="/service-details">
@@ -71,7 +71,7 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="400"
             >
-              <div className="service-card-one height-100 white-bg text-center">
+              <div className="service-card-one white-bg text-center">
                 <i className="pe-7s-light bg-ffb700"></i>
                 <h3>
                   <Link href="/service-details">

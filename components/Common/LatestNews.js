@@ -7,11 +7,7 @@ const LatestNews = () => {
       <div className="blog-area ptb-110">
         <div className="container">
           <div className="section-title">
-            <h2>Latest News</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <h2>Nieuws</h2>
           </div>
 
           <div className="row align-items-center">
@@ -26,28 +22,9 @@ const LatestNews = () => {
                 </div>
 
                 <div className="post-content">
-                  <ul className="post-meta">
-                    <li>
-                      <i className="fa-solid fa-user"></i>
-                      <Link href="/blog">
-                        <a>Admin</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-tag"></i>
-                      <Link href="/blog-details">
-                        <a>Web Development</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-calendar-days"></i>
-                      Feb 15, 2022
-                    </li>
-                  </ul>
-
                   <h3 className="mb-0">
                     <Link href="/blog-details">
-                      <a>How to Become a Successful Entry Level UX Designer</a>
+                      <a>Tariefwijzigingen</a>
                     </Link>
                   </h3>
                 </div>
@@ -70,30 +47,9 @@ const LatestNews = () => {
 
                     <div className="col-lg-8 col-md-9 col-sm-8">
                       <div className="post-content">
-                        <ul className="post-meta">
-                          <li>
-                            <i className="fa-solid fa-user"></i>
-                            <Link href="/blog">
-                              <a>Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-tag"></i>
-                            <Link href="/blog-details">
-                              <a>React Js</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-calendar-days"></i>
-                            Feb 16, 2022
-                          </li>
-                        </ul>
-
                         <h3>
                           <Link href="/blog-details">
-                            <a>
-                              How to Become a Successful Entry Level UX Designer
-                            </a>
+                            <a>Het is niet altijd een succes :(</a>
                           </Link>
                         </h3>
                       </div>
@@ -115,29 +71,11 @@ const LatestNews = () => {
 
                     <div className="col-lg-8 col-md-9 col-sm-8">
                       <div className="post-content">
-                        <ul className="post-meta">
-                          <li>
-                            <i className="fa-solid fa-user"></i>
-                            <Link href="/blog">
-                              <a>Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-tag"></i>
-                            <Link href="/blog-details">
-                              <a>Angular Js</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-calendar-days"></i>
-                            Feb 17, 2022
-                          </li>
-                        </ul>
-
                         <h3>
                           <Link href="/blog-details">
                             <a>
-                              The Guide to Running a Client Discovery Process
+                              Nieuwe samenwerkingen KorfbalKids seizoen
+                              2022-2023
                             </a>
                           </Link>
                         </h3>
@@ -160,29 +98,11 @@ const LatestNews = () => {
 
                     <div className="col-lg-8 col-md-9 col-sm-8">
                       <div className="post-content">
-                        <ul className="post-meta">
-                          <li>
-                            <i className="fa-solid fa-user"></i>
-                            <Link href="/blog">
-                              <a>Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-tag"></i>
-                            <Link href="/blog-details">
-                              <a>Design</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-calendar-days"></i>
-                            Feb 18, 2022
-                          </li>
-                        </ul>
-
                         <h3>
                           <Link href="/blog-details">
                             <a>
-                              3 Ways to Get Client Approval for Scope Changes
+                              Succesvolle samenwerking tussen KorfbalKids en
+                              KZ/Thermo4U
                             </a>
                           </Link>
                         </h3>
@@ -205,28 +125,9 @@ const LatestNews = () => {
 
                     <div className="col-lg-8 col-md-9 col-sm-8">
                       <div className="post-content">
-                        <ul className="post-meta">
-                          <li>
-                            <i className="fa-solid fa-user"></i>
-                            <Link href="/blog">
-                              <a>Admin</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-tag"></i>
-                            <Link href="/blog-details">
-                              <a>Design</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-calendar-days"></i>
-                            Feb 18, 2022
-                          </li>
-                        </ul>
-
                         <h3>
                           <Link href="/blog-details">
-                            <a>Top 21 Must-Read Blogs For Creative Agencies</a>
+                            <a>Samenwerking KorfbalKids en KV DOT</a>
                           </Link>
                         </h3>
                       </div>

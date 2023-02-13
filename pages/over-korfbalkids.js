@@ -14,17 +14,9 @@ const Aabout = () => {
     <>
       <NavbarTwo />
 
-      <PageBanner pageTitle="About Us" BGImage="/images/page-banner1.jpg" />
+      <PageBanner pageTitle="Over KorfbalKids" BGImage="/images/foto-2.jpg" />
 
       <AboutContent />
-
-      <FunFactsTwo />
-
-      <TeamStyleThree />
-
-      <Feedback />
-
-      <Partner />
 
       <CtaAreaTwo />
 

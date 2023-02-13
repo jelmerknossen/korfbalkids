@@ -11,12 +11,11 @@ const ContactInfo = () => {
                 <div className="icon">
                   <i className="pe-7s-mail"></i>
                 </div>
-                <h3>Mail Here</h3>
+                <h3>E-mail</h3>
                 <p>
-                  <a href="mailto:admin@pungent.com">admin@pungent.com</a>
-                </p>
-                <p>
-                  <a href="mailto:info@pungent.com">info@pungent.com</a>
+                  <a href="mailto:jelmerknossen@korfbalkids.nl">
+                    jelmerknossen@korfbalkids.nl
+                  </a>
                 </p>
               </div>
             </div>
@@ -26,9 +25,9 @@ const ContactInfo = () => {
                 <div className="icon">
                   <i className="pe-7s-map-2"></i>
                 </div>
-                <h3>Visit Here</h3>
+                <h3>Adres</h3>
                 <p>
-                  27 Division St, New York, <br /> NY 10002, USA
+                  Burgemeester Vijlbriefstraat 2B, <br /> 1551 TK Westzaan
                 </p>
               </div>
             </div>
@@ -38,12 +37,9 @@ const ContactInfo = () => {
                 <div className="icon">
                   <i className="pe-7s-call"></i>
                 </div>
-                <h3>Call Here</h3>
+                <h3>Telefoonnummer</h3>
                 <p>
-                  <a href="tel:+1234567890">+123 456 7890</a>
-                </p>
-                <p>
-                  <a href="tel:+2414524526">+241 452 4526</a>
+                  <a href="tel:0610365180">06 10 36 51 80</a>
                 </p>
               </div>
             </div>

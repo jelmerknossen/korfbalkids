@@ -76,13 +76,13 @@ const NavbarTwo = () => {
                 </li>
 
                 <li className="nav-item">
-                  <Link href="/about">
+                  <Link href="/over-korfbalkids">
                     <a className="nav-link">Over KorfbalKids</a>
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link href="#">
+                  <Link href="/tarieven">
                     <a className="nav-link">Tarieven</a>
                   </Link>
                 </li>
