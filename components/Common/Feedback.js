@@ -24,127 +24,46 @@ const Feedback = () => {
               <SwiperSlide>
                 <div className="single-feedback">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.
+                    Door de deskundige inzet/organisatie van Jelmer tijdens de
+                    clinics voor de schooljeugd is het enthousiasme voor de
+                    sport en onze club binnen de gemeente gegroeid. Het opzetten
+                    en uitvoering van de Giga-kangoeroedag is door de
+                    ondersteuning van Jelmer een groot succes geworden. Jelmer
+                    heeft een grote rol bij de advisering en uitvoering van ons
+                    plan voor groei binnen onze jeugdafdeling van de club. Wij
+                    zijn zeer enthousiast over de werkwijze van Jelmer;
+                    betrokken, enthousiast, kundig en gestructureerd. Hij heeft
+                    clinics verzorgt voor basisscholen namens onze club en
+                    clinics /trainingen gegeven aan onze eigen jeugdleden.
+                    Inspirerend en zeer goed voor de korfballende jeugd. Wij
+                    betrekken Jelmer nauw bij onze plannen voor de jeugd van
+                    onze vereniging.
                   </p>
 
                   <div className="bar"></div>
 
-                  <h3>John Smith</h3>
-                  <span>CEO & Founder, Envato</span>
+                  <h3>Janine Schoorl</h3>
+                  <span>Functie ledenwerfcommissie Helios</span>
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className="single-feedback">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.
+                    Ik heb vernomen dat de clinic met veel enthousiasme is
+                    ontvangen. De trainers in spé waren zeer te spreken over de
+                    uitdagende spelvormen en de tips die je ze hebt meegegeven.
+                    Dank daarvoor!
                   </p>
 
                   <div className="bar"></div>
 
-                  <h3>Oliver Smith</h3>
-                  <span>React JS Specialist</span>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="single-feedback">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.
-                  </p>
-
-                  <div className="bar"></div>
-
-                  <h3>Thomas John</h3>
-                  <span>Angular JS Specialist</span>
+                  <h3>Jelle Brinks</h3>
+                  <span>Combinatiefunctionaris Almelo</span>
                 </div>
               </SwiperSlide>
             </Swiper>
           </div>
-        </div>
-
-        {/* Client image */}
-        <div className="client-image-box">
-          <img
-            src="/images/clients/client1.png"
-            className="client1"
-            alt="client" 
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="200"
-          />
- 
-          <img
-            src="/images/clients/client2.png"
-            className="client2"
-            alt="client" 
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="300"
-          />
-       
-          <img
-            src="/images/clients/client3.png"
-            className="client3"
-            alt="client" 
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="400"
-          />
-         
-          <img
-            src="/images/clients/client4.png"
-            className="client4"
-            alt="client"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="500"
-          />
-         
-          <img
-            src="/images/clients/client5.png"
-            className="client5"
-            alt="client"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="600"
-          />
-         
-          <img
-            src="/images/clients/client6.png"
-            className="client6"
-            alt="client"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="700"
-          />
-           
-          <img
-            src="/images/clients/client7.png"
-            className="client7"
-            alt="client" 
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="800"
-          />
-         
-          <img
-            src="/images/clients/client8.png"
-            className="client8"
-            alt="client"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="900"
-          />
         </div>
       </div>
     </>

@@ -7,7 +7,7 @@ const CtaAreaTwo = () => {
       <div className="cta-area-two ptb-100">
         <div className="container">
           <div className="cta-content">
-            <span>Lijkt het je wat?</span>
+            <span>Geinteresseerd?</span>
             <h3>Neem dan contact op met KorfbalKids!</h3>
           </div>
 

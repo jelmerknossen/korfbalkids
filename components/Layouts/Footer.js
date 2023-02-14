@@ -30,17 +30,17 @@ const Footer = () => {
 
                 <ul className="list">
                   <li>
-                    <Link href="/">
+                    <Link href="/acties">
                       <a>Acties</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about">
+                    <Link href="/partners">
                       <a>Partners</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services">
+                    <Link href="/klantervaringen">
                       <a>Klantervaringen</a>
                     </Link>
                   </li>
@@ -62,12 +62,12 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about">
+                    <Link href="/over-korfbalkids">
                       <a>Over KorfbalKids</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/filmmateriaal">
+                    <Link href="/multimedia">
                       <a>Filmmateriaal</a>
                     </Link>
                   </li>
@@ -99,7 +99,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-headset"></i>
-                    <a href="tel:+324-9442-515">06 10 36 51 80</a>
+                    <a href="tel:0610365180">06 10 36 51 80</a>
                   </li>
                   <li>
                     <i className="fa-solid fa-envelope"></i>

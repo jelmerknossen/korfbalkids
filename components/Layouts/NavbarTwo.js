@@ -64,13 +64,13 @@ const NavbarTwo = () => {
                 </li>
 
                 <li className="nav-item">
-                  <Link href="#">
+                  <Link href="/verenigingen">
                     <a className="nav-link">Verenigingen</a>
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link href="/about" activeClassName="active">
+                  <Link href="/multimedia" activeClassName="active">
                     <a className="nav-link">Filmmateriaal</a>
                   </Link>
                 </li>

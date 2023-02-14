@@ -7,7 +7,7 @@ const ContactInfo = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-4 col-md-6">
-              <div className="contact-info-box">
+              <div className="contact-info-box min-height-contact">
                 <div className="icon">
                   <i className="pe-7s-mail"></i>
                 </div>
@@ -21,7 +21,7 @@ const ContactInfo = () => {
             </div>
 
             <div className="col-lg-4 col-md-6">
-              <div className="contact-info-box">
+              <div className="contact-info-box min-height-contact">
                 <div className="icon">
                   <i className="pe-7s-map-2"></i>
                 </div>
@@ -33,7 +33,7 @@ const ContactInfo = () => {
             </div>
 
             <div className="col-lg-4 col-md-6">
-              <div className="contact-info-box">
+              <div className="contact-info-box min-height-contact">
                 <div className="icon">
                   <i className="pe-7s-call"></i>
                 </div>
