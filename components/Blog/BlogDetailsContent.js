@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import BlogSidebar from "./BlogSidebar";
-import BlogComments from "./BlogComments";
 
 const BlogRightSidebar = () => {
   return (
@@ -87,20 +86,6 @@ const BlogRightSidebar = () => {
                     reiciendis voluptatibus maiores alias consequatur aut
                     perferendis doloribus.
                   </p>
-                </div>
-              </div>
-
-              {/* Post controls */}
-              <div className="post-controls-buttons">
-                <div>
-                  <Link href="#">
-                    <a>Prev Post</a>
-                  </Link>
-                </div>
-                <div>
-                  <Link href="#">
-                    <a>Next Post</a>
-                  </Link>
                 </div>
               </div>
             </div>

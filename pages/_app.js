@@ -16,11 +16,8 @@ import "../styles/responsive.scss";
 
 import Head from "next/head";
 import GoTop from "../components/Layouts/GoTop";
-import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-  console.log(router);
   React.useEffect(() => {
     AOS.init();
   }, []);
