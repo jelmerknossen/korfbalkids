@@ -2,3 +2,4 @@ node_modules/
 .cache/
 build
 .next
+.DS_Store

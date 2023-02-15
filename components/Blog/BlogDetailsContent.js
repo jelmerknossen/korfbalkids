@@ -24,7 +24,8 @@ const BlogRightSidebar = () => {
                       </Link>
                     </li>
                     <li>
-                      <i className="fa-solid fa-calendar-days"></i> March 08, 2022
+                      <i className="fa-solid fa-calendar-days"></i> March 08,
+                      2022
                     </li>
                   </ul>
 
@@ -86,33 +87,6 @@ const BlogRightSidebar = () => {
                     reiciendis voluptatibus maiores alias consequatur aut
                     perferendis doloribus.
                   </p>
-
-                  {/* Category */}
-                  <ul className="category">
-                    <li>
-                      <span>Tags:</span>
-                    </li>
-                    <li>
-                      <Link href="/blog">
-                        <a>Business</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">
-                        <a>IT</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">
-                        <a>Tips</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">
-                        <a>Design</a>
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
 
@@ -129,8 +103,6 @@ const BlogRightSidebar = () => {
                   </Link>
                 </div>
               </div>
-
-              <BlogComments />
             </div>
 
             <div className="col-lg-4 col-md-12">

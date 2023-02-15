@@ -16,8 +16,11 @@ import "../styles/responsive.scss";
 
 import Head from "next/head";
 import GoTop from "../components/Layouts/GoTop";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  console.log(router);
   React.useEffect(() => {
     AOS.init();
   }, []);
@@ -26,9 +29,6 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>
-          Pungent - React Multipurpose Startup & Digital Agency Template
-        </title>
       </Head>
 
       <Component {...pageProps} />

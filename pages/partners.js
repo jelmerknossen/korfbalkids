@@ -3,10 +3,14 @@ import NavbarTwo from "../components/Layouts/NavbarTwo";
 import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/Layouts/Footer";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
+import Head from "next/head";
 
 const Partners = () => {
   return (
     <>
+      <Head>
+        <title>Korfbalkids - Partners</title>
+      </Head>
       <NavbarTwo />
 
       <PageBanner pageTitle="Partners" BGImage="/images/korfbal-header.jpg" />

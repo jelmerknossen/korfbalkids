@@ -3,10 +3,18 @@ import NavbarTwo from "../components/Layouts/NavbarTwo";
 import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/Layouts/Footer";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
+import Head from "next/head";
 
 const Acties = () => {
   return (
     <>
+      <Head>
+        <title>Korfbalkids - Acties</title>
+        <meta
+          name="description"
+          content="Alle speciale acties op de diensten van Korfbalkids, hou deze pagina in de gaten voor de actietarieven."
+        ></meta>
+      </Head>
       <NavbarTwo />
 
       <PageBanner pageTitle="Acties" BGImage="/images/korfbal-header.jpg" />
