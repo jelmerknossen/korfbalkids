@@ -1806,7 +1806,7 @@ About CSS
     transform: translateY(-50%);
     width: 90px;
     height: 90px;
-    background-color: #f9004d;
+    background-color: $main-color;
     border-radius: 50%;
     color: #fff;
     font-size: 40px;
@@ -1826,7 +1826,7 @@ About CSS
       bottom: 0;
       left: 0;
       border-radius: 50%;
-      border: 1px solid #f9004d;
+      border: 1px solid $main-color;
       transition: 0.5s;
     }
 
@@ -5803,13 +5803,13 @@ Portfolio Details CSS
   }
   .video-box {
     .video-btn {
-      background-color: #f9004d;
+      background-color: $main-color;
       color: #fff;
       width: 90px;
       height: 90px;
       &:before,
       &:after {
-        border: 1px solid #f9004d;
+        border: 1px solid $main-color;
       }
     }
   }

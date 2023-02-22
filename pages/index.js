@@ -6,8 +6,27 @@ import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import LatestNews from "../components/Common/LatestNews";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
+import { request } from "./api/datocms";
 
-const KorfbalKids = () => {
+const ALLNIEWSBERICHT_QUERY = `query MyQuery {
+  allNieuwsberichts {
+    slug
+    titel
+    id
+  }
+}`;
+
+export async function getStaticProps() {
+  const data = await request({
+    query: ALLNIEWSBERICHT_QUERY,
+  });
+
+  return {
+    props: { data },
+  };
+}
+
+const KorfbalKids = ({ data }) => {
   return (
     <>
       <Head>
@@ -25,7 +44,7 @@ const KorfbalKids = () => {
       <Services />
 
       <div className="ptb-100">
-        <LatestNews />
+        <LatestNews newsItems={data.allNieuwsberichts} />
       </div>
 
       <CtaAreaTwo />

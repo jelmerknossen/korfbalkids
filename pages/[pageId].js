@@ -5,44 +5,74 @@ import BlogDetailsContent from "../components/Blog/BlogDetailsContent";
 import Footer from "../components/Layouts/Footer";
 import { request } from "./api/datocms";
 
-const NIEWSBERICHT_QUERY = `query nieuwsBerichtQuery {
+const ALLNIEWSBERICHT_QUERY = `query allNieuwsBerichtQuery {
   allNieuwsberichts {
-    tekst
     titel
     id
+    slug
+    tekst
     datum
   }
 }`;
 
 export async function getStaticPaths() {
+  const data = await request({
+    query: ALLNIEWSBERICHT_QUERY,
+  });
+
+  const paths = data.allNieuwsberichts.map((nieuwsbericht) => ({
+    params: { pageId: nieuwsbericht.slug },
+  }));
+
   return {
-    paths: [
-      { params: { pageId: "testing1" } },
-      { params: { pageId: "testing2" } },
-    ],
-    fallback: false, // can also be true or 'blocking'
+    paths,
+    fallback: false,
   };
 }
 
 // `getStaticPaths` requires using `getStaticProps`
-export async function getStaticProps(context) {
-  const data = await request({
+export async function getStaticProps(paths) {
+  const {
+    params: { pageId },
+  } = paths;
+
+  const NIEWSBERICHT_QUERY = `query MyQuery {
+    allNieuwsberichts(filter: {slug: {eq: "${pageId}"}}) {
+      titel
+      tekst
+      slug
+      id
+      datum
+    }
+  }`;
+
+  const dataSingleNewsItem = await request({
     query: NIEWSBERICHT_QUERY,
   });
+
+  const dataAllNewsItems = await request({
+    query: ALLNIEWSBERICHT_QUERY,
+  });
+
   return {
-    props: { data },
+    props: { dataSingleNewsItem, dataAllNewsItems },
   };
 }
 
-const BlogDetails = ({ data }) => {
+const BlogDetails = ({ dataSingleNewsItem, dataAllNewsItems }) => {
+  const { tekst, titel, datum } = dataSingleNewsItem.allNieuwsberichts[0];
+
   return (
     <>
       <NavbarTwo />
 
-      <PageBanner pageTitle="Blog Details" BGImage="/images/page-banner2.jpg" />
+      <PageBanner pageTitle={titel} BGImage="/images/ballen.jpeg" />
 
-      <div>{JSON.stringify(data, null, 2)}</div>
-      <BlogDetailsContent />
+      <BlogDetailsContent
+        datum={datum}
+        allNewsItems={dataAllNewsItems}
+        tekst={tekst}
+      />
 
       <Footer />
     </>
