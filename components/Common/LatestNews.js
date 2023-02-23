@@ -44,7 +44,7 @@ const FeatureNewsItem = ({ titel, slug }) => (
 
     <div className="post-content">
       <h3 className="mb-0">
-        <Link href="/blog-details">
+        <Link href={`/${slug}`}>
           <a>{titel}</a>
         </Link>
       </h3>
