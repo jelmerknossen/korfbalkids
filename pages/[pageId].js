@@ -3,7 +3,7 @@ import NavbarTwo from "../components/Layouts/NavbarTwo";
 import PageBanner from "../components/Common/PageBanner";
 import BlogDetailsContent from "../components/Blog/BlogDetailsContent";
 import Footer from "../components/Layouts/Footer";
-import { request } from "./api/datocms";
+import { request } from "../utils/datoCms";
 
 const ALLNIEWSBERICHT_QUERY = `query allNieuwsBerichtQuery {
   allNieuwsberichts {

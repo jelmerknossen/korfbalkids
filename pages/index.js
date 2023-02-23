@@ -6,7 +6,7 @@ import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import LatestNews from "../components/Common/LatestNews";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
-import { request } from "./api/datocms";
+import { request } from "../utils/datoCms";
 
 const ALLNIEWSBERICHT_QUERY = `query MyQuery {
   allNieuwsberichts {
