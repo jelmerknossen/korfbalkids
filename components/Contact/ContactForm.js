@@ -4,12 +4,7 @@ const ContactForm = () => {
   return (
     <>
       <div className="contact-form pb-70">
-        <form
-          name="contact"
-          action="/dankjewel"
-          method="POST"
-          data-netlify="true"
-        >
+        <form name="contact" action="/thanks" method="POST" data-netlify="true">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
