@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const NewsItemList = ({ newsItems }) =>
-  newsItems.slice(1).map((newsItem) => {
+  newsItems.slice(1, 5).map((newsItem) => {
     const { slug, titel, id } = newsItem;
 
     return (

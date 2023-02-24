@@ -26,31 +26,10 @@ const INITIAL_STATE = {
 };
 
 const ContactForm = () => {
-  const [contact, setContact] = useState(INITIAL_STATE);
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setContact((prevState) => ({ ...prevState, [name]: value }));
-    // console.log(contact)
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const url = `${baseUrl}/api/contact`;
-      const { name, email, number, subject, text } = contact;
-      const payload = { name, email, number, subject, text };
-      const response = await axios.post(url, payload);
-      console.log(response);
-      setContact(INITIAL_STATE);
-      alertContent();
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
     <>
       <div className="contact-form pb-70">
-        <form onSubmit={handleSubmit}>
+        <form name="contact" method="POST" data-netlify="true">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
@@ -60,8 +39,6 @@ const ContactForm = () => {
                     name="name"
                     placeholder="Naam"
                     className="form-control"
-                    value={contact.name}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -73,8 +50,6 @@ const ContactForm = () => {
                     name="email"
                     placeholder="E-mail"
                     className="form-control"
-                    value={contact.email}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -86,8 +61,6 @@ const ContactForm = () => {
                     name="number"
                     placeholder="Telefoonnummer"
                     className="form-control"
-                    value={contact.number}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -99,8 +72,6 @@ const ContactForm = () => {
                     name="subject"
                     placeholder="Onderwerp"
                     className="form-control"
-                    value={contact.subject}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -113,8 +84,6 @@ const ContactForm = () => {
                     rows="6"
                     placeholder="Bericht..."
                     className="form-control"
-                    value={contact.text}
-                    onChange={handleChange}
                     required
                   />
                 </div>

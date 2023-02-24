@@ -14,7 +14,7 @@ const BlogRightSidebar = ({ tekst, datum, allNewsItems }) => {
                   <ul className="entry-meta">
                     <li>
                       <i className="fa-solid fa-user"></i>
-                      <Link href="/blog">
+                      <Link href="/over-korfbalkids">
                         <a>Jelmer Knossen</a>
                       </Link>
                     </li>
