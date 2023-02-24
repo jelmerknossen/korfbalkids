@@ -85,62 +85,6 @@ const MainBanner = () => {
             </div>
           </div>
         </SwiperSlide>
-
-        <SwiperSlide>
-          <div
-            className="hero-banner overly-6"
-            style={{
-              backgroundImage: `url(/images/korfbal-header.jpg)`,
-            }}
-          >
-            <div className="d-table">
-              <div className="d-table-cell">
-                <div className="container">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <div className="main-banner-content text-center">
-                        <h3
-                          style={{ color: "white" }}
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne white"
-                              : "opacityZero"
-                          }
-                        >
-                          Clinic mick en jet
-                        </h3>
-
-                        <p
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          Buiten dat ze goed kunnen korfballen, geven ze ook nog
-                          eens geweldig leuke clinics!
-                        </p>
-
-                        <div
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          <Link href="/contact">
-                            <a className="btn btn-primary">Neem contact op</a>
-                          </Link>
-                        </div>
-                      </div>
-                    )}
-                  </VisibilitySensor>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
         <SwiperSlide>
           <div
             className="hero-banner overly-6"

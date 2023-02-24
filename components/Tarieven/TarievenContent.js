@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import React from "react";
 
 const TarievenContent = () => {
-  const [toggler, setToggler] = useState(false);
   return (
     <>
       <div className="about-area ptb-100">
@@ -69,30 +67,13 @@ const TarievenContent = () => {
               </div>
               <div className="about-content about-content-two">
                 <div className="section-title">
-                  <h4>
-                    Clinic van Jet Hendriks en/of Mick Snel (of wellicht een
-                    andere league speler).
-                  </h4>
+                  <h4>Clinic van een international.</h4>
                   <p>
                     Wil je een onwijs gave clinic voor één of meer jullie
-                    jeugdteams van Jet of Mick? Dat kan, de kosten hiervoor zijn
-                    399,00 euro voor één korfballeague speler en 549,00 euro
-                    voor 2 korfballeague spelers. Tarieven zijn inclusief
-                    reiskosten en btw.
-                  </p>
-                </div>
-              </div>
-              <div className="about-content about-content-two">
-                <div className="section-title">
-                  <h4>Giga Kangoeroedag</h4>
-                  <p>
-                    Volledige begeleiding van de Giga kangoeroedag incl: (3x
-                    overleg, begeleiding tijdens de Giga Kangoeroedag, 1x
-                    training KangoeroeKlup, gebruik van KangoeroeKlup shirt per
-                    kind, gebruik van geluidsinstallatie met microfoon en 1x
-                    evaluatie). De kosten voor de volledige begeleiding zijn
-                    899,00 euro exclusief reiskosten. De reiskosten bedragen 27
-                    cent per kilometer.
+                    jeugdteams van een international? Dat kan, de kosten
+                    hiervoor zijn 399,00 euro voor één korfballeague speler en
+                    549,00 euro voor 2 korfballeague spelers. Tarieven zijn
+                    inclusief reiskosten en btw.
                   </p>
                 </div>
               </div>
