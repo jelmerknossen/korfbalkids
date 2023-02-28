@@ -5,8 +5,28 @@ import ContactInfo from "../components/Contact/ContactInfo";
 import ContactForm from "../components/Contact/ContactForm";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
+import { request } from "../utils/datoCms";
 
-const Contact = () => {
+const ALLALGEMEEN_QUERY = `query MyQuery {
+  allAlgemeens {
+    adres
+    email
+    telefoonnummer
+  }
+}`;
+
+export async function getStaticProps() {
+  const data = await request({
+    query: ALLALGEMEEN_QUERY,
+  });
+
+  return {
+    props: { data },
+  };
+}
+
+const Contact = ({ data }) => {
+  const { telefoonnummer, email, adres } = data.allAlgemeens[0];
   return (
     <>
       <Head>
@@ -21,7 +41,11 @@ const Contact = () => {
 
       <PageBanner pageTitle="Contact" BGImage="/images/korfbal-header.jpg" />
 
-      <ContactInfo />
+      <ContactInfo
+        telefoonnummer={telefoonnummer}
+        email={email}
+        adres={adres}
+      />
 
       <ContactForm />
 

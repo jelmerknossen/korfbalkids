@@ -19,7 +19,8 @@ const BlogRightSidebar = ({ tekst, datum, allNewsItems }) => {
                       </Link>
                     </li>
                     <li>
-                      <i className="fa-solid fa-calendar-days"></i> {datum}
+                      <i className="fa-solid fa-calendar-days"></i>{" "}
+                      {datum.split("-").reverse().join("/")}
                     </li>
                   </ul>
                   <div dangerouslySetInnerHTML={{ __html: tekst }} />

@@ -5,8 +5,30 @@ import AboutContent from "../components/About/AboutContent";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
+import { request } from "../utils/datoCms";
 
-const Aabout = () => {
+const ALLOVER_QUERY = `query allOversQuery {
+  allOvers {
+    tekst
+    plaatje {
+      url
+    }
+  }
+}`;
+
+export async function getStaticProps() {
+  const data = await request({
+    query: ALLOVER_QUERY,
+  });
+
+  return {
+    props: { data },
+  };
+}
+
+const Aabout = ({ data }) => {
+  console.log(data);
+  const { tekst, plaatje } = data.allOvers[0];
   return (
     <>
       <Head>
@@ -20,7 +42,7 @@ const Aabout = () => {
 
       <PageBanner pageTitle="Over KorfbalKids" BGImage="/images/foto-2.jpg" />
 
-      <AboutContent />
+      <AboutContent plaatje={plaatje} tekst={tekst} />
 
       <CtaAreaTwo />
 

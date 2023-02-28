@@ -13,20 +13,35 @@ const ALLNIEWSBERICHT_QUERY = `query MyQuery {
     slug
     titel
     id
+    datum
   }
 }`;
 
+const ALLSLIDER_QUERY = `query AllSliderQuery {
+  allSliders {
+    subtitel
+    titel
+    id
+    plaatje {
+      url
+    }
+  }
+}`;
 export async function getStaticProps() {
-  const data = await request({
+  const dataAllNews = await request({
     query: ALLNIEWSBERICHT_QUERY,
   });
 
+  const dataAllSlider = await request({
+    query: ALLSLIDER_QUERY,
+  });
+
   return {
-    props: { data },
+    props: { dataAllNews, dataAllSlider },
   };
 }
 
-const KorfbalKids = ({ data }) => {
+const KorfbalKids = ({ dataAllNews, dataAllSlider }) => {
   return (
     <>
       <Head>
@@ -39,12 +54,12 @@ const KorfbalKids = ({ data }) => {
 
       <NavbarTwo />
 
-      <MainBanner />
+      <MainBanner sliderData={dataAllSlider.allSliders} />
 
       <Services />
 
       <div className="ptb-100">
-        <LatestNews newsItems={data.allNieuwsberichts} />
+        <LatestNews newsItems={dataAllNews.allNieuwsberichts} />
       </div>
 
       <CtaAreaTwo />

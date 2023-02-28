@@ -3,14 +3,16 @@ import Link from "next/link";
 
 const LatestNews = ({ allNewsItems }) =>
   allNewsItems.allNieuwsberichts.map((newsItem) => {
-    const { slug, titel } = newsItem;
+    const { slug, titel, datum } = newsItem;
 
     return (
       <li key={slug}>
         <Link href={`/${slug}`}>
           <a>{titel}</a>
         </Link>
-        <span className="post-date">March 15, 2022</span>
+        <span className="post-date">
+          {datum.split("-").reverse().join("/")}
+        </span>
       </li>
     );
   });

@@ -5,8 +5,29 @@ import VerenigingenContent from "../components/Verenigingen/VerenigingenContent"
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import Footer from "../components/Layouts/Footer";
 import Head from "next/head";
+import { request } from "../utils/datoCms";
 
-const Aabout = () => {
+const ALLVERENIGING_QUERY = `query MyQuery {
+  allVerenigings {
+    tekst
+    plaatje {
+      url
+    }
+  }
+}`;
+
+export async function getStaticProps() {
+  const data = await request({
+    query: ALLVERENIGING_QUERY,
+  });
+
+  return {
+    props: { data },
+  };
+}
+
+const Verenigingen = ({ data }) => {
+  const { tekst, plaatje } = data.allVerenigings[0];
   return (
     <>
       <Head>
@@ -20,7 +41,7 @@ const Aabout = () => {
 
       <PageBanner pageTitle="Verenigingen" BGImage="/images/foto-2.jpg" />
 
-      <VerenigingenContent />
+      <VerenigingenContent tekst={tekst} plaatje={plaatje} />
 
       <CtaAreaTwo />
 
@@ -29,4 +50,4 @@ const Aabout = () => {
   );
 };
 
-export default Aabout;
+export default Verenigingen;

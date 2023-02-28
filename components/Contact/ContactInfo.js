@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactInfo = () => {
+const ContactInfo = ({ email, adres, telefoonnummer }) => {
   return (
     <>
       <div className="contact-info-area pt-100 pb-70">
@@ -13,9 +13,7 @@ const ContactInfo = () => {
                 </div>
                 <h3>E-mail</h3>
                 <p>
-                  <a href="mailto:jelmerknossen@korfbalkids.nl">
-                    jelmerknossen@korfbalkids.nl
-                  </a>
+                  <a href="mailto:jelmerknossen@korfbalkids.nl">{email}</a>
                 </p>
               </div>
             </div>
@@ -26,9 +24,7 @@ const ContactInfo = () => {
                   <i className="pe-7s-map-2"></i>
                 </div>
                 <h3>Adres</h3>
-                <p>
-                  Burgemeester Vijlbriefstraat 2B, <br /> 1551 TK Westzaan
-                </p>
+                <div dangerouslySetInnerHTML={{ __html: adres }} />
               </div>
             </div>
 
@@ -39,7 +35,7 @@ const ContactInfo = () => {
                 </div>
                 <h3>Telefoonnummer</h3>
                 <p>
-                  <a href="tel:0610365180">06 10 36 51 80</a>
+                  <a href={`tel:${telefoonnummer}`}>{telefoonnummer}</a>
                 </p>
               </div>
             </div>

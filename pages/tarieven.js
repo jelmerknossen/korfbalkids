@@ -5,8 +5,26 @@ import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import Footer from "../components/Layouts/Footer";
 import TarievenContent from "../components/Tarieven/TarievenContent";
 import Head from "next/head";
+import { request } from "../utils/datoCms";
 
-const Tarieven = () => {
+const ALLTARIEVEN_QUERY = `query allTarievenQuery {
+  allTarievens {
+    tekst
+  }
+}`;
+
+export async function getStaticProps() {
+  const data = await request({
+    query: ALLTARIEVEN_QUERY,
+  });
+
+  return {
+    props: { data },
+  };
+}
+
+const Tarieven = ({ data }) => {
+  const { tekst } = data.allTarievens[0];
   return (
     <>
       <Head>
@@ -20,7 +38,7 @@ const Tarieven = () => {
 
       <PageBanner pageTitle="Tarieven" BGImage="/images/e-roda.jpg" />
 
-      <TarievenContent />
+      <TarievenContent tekst={tekst} />
 
       <CtaAreaTwo />
 
