@@ -83,14 +83,6 @@ const Footer = () => {
                 <h3>Neem contact op</h3>
                 <ul className="get-in-touch">
                   <li>
-                    <i className="fa-solid fa-location-dot"></i>
-                    Korfbal Kids
-                    <br />
-                    Burgemeester Vijlbriefstraat 2B
-                    <br />
-                    1551TK Westzaan
-                  </li>
-                  <li>
                     <i className="fa-solid fa-headset"></i>
                     <a href="tel:0610365180">06 10 36 51 80</a>
                   </li>

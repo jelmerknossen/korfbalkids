@@ -27,7 +27,6 @@ export async function getStaticProps() {
 }
 
 const Aabout = ({ data }) => {
-  console.log(data);
   const { tekst, plaatje } = data.allOvers[0];
   return (
     <>

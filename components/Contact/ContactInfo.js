@@ -21,16 +21,6 @@ const ContactInfo = ({ email, adres, telefoonnummer }) => {
             <div className="col-lg-4 col-md-6">
               <div className="contact-info-box min-height-contact">
                 <div className="icon">
-                  <i className="pe-7s-map-2"></i>
-                </div>
-                <h3>Adres</h3>
-                <div dangerouslySetInnerHTML={{ __html: adres }} />
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="contact-info-box min-height-contact">
-                <div className="icon">
                   <i className="pe-7s-call"></i>
                 </div>
                 <h3>Telefoonnummer</h3>

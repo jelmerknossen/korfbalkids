@@ -1,7 +1,6 @@
 import React from "react";
 
 const AboutContent = ({ tekst, plaatje }) => {
-  console.log(plaatje);
   return (
     <>
       <div className="about-area ptb-100">
